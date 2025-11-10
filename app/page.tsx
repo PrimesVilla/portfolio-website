@@ -122,7 +122,7 @@ export default function Portfolio() {
                 <div>
                   <p className="text-slate-300 font-medium mb-2">Front-End Development:</p>
                   <div className="flex flex-wrap gap-2">
-                    {['HTML', 'CSS', 'JavaScript', 'React.js', 'Tailwind'].map(skill => (
+                    {['Next.js', 'React.js', 'Tailwind', 'HTML', 'CSS'].map(skill => (
                       <Badge key={skill} variant="secondary" className="bg-cyan-500/10 text-cyan-400 border-cyan-500/30">
                         {skill}
                       </Badge>
@@ -132,7 +132,7 @@ export default function Portfolio() {
                 <div>
                   <p className="text-slate-300 font-medium mb-2">Back-End Development:</p>
                   <div className="flex flex-wrap gap-2">
-                    {['Node.js', 'Express', 'Python'].map(skill => (
+                    {['Express.js', 'Node.js', 'Python', 'Flask'].map(skill => (
                       <Badge key={skill} variant="secondary" className="bg-blue-500/10 text-blue-400 border-blue-500/30">
                         {skill}
                       </Badge>
@@ -142,7 +142,7 @@ export default function Portfolio() {
                 <div>
                   <p className="text-slate-300 font-medium mb-2">Database:</p>
                   <div className="flex flex-wrap gap-2">
-                    {['NoSQL', 'MySQL', 'PostgreSQL'].map(skill => (
+                    {['Firebase Database', 'XAMPP', 'MySQL', 'NoSQL'].map(skill => (
                       <Badge key={skill} variant="secondary" className="bg-green-500/10 text-green-400 border-green-500/30">
                         {skill}
                       </Badge>
@@ -176,7 +176,7 @@ export default function Portfolio() {
               <h3 className="text-2xl font-bold text-white mb-6">Soft Skills</h3>
               <div className="space-y-4">
                 {[
-                  { name: 'Adaptability', value: 95 },
+                  { name: 'Adaptability', value: 100 },
                   { name: 'Problem Solving', value: 85 },
                   { name: 'Team Collaboration', value: 90 },
                   { name: 'Communication', value: 90 },
@@ -236,14 +236,20 @@ export default function Portfolio() {
                   <Badge variant="secondary"className="bg-orange-500/10 text-orange-400 border-orange-500/30">
                     Git
                   </Badge>
+                  <Badge variant="secondary"className="bg-purple-500/10 text-purple-400 border-purple-500/30">
+                    Miro
+                  </Badge>
+                  <Badge variant="secondary"className="bg-purple-500/10 text-purple-400 border-purple-500/30">
+                    Figma
+                  </Badge>
                   <Badge variant="secondary"className="bg-gray-500/10 text-gray-400 border-gray-500/30">
-                    BOOTSTRAP
+                    Bootstrap
                   </Badge>
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-slate-300">
-                  A modern startup website built with HTML, CSS, and Bootstrap, featuring responsive design and clean UI/UX.
+                  MasSafe: A modern startup website built to display a concept app designed for a Human-Computer Interaction (HCI) project, focusing on responsive design, user-friendly UI/UX, and team collaboration via Miro and Figma. 
                 </p>
               </CardContent>
             </Card>
@@ -257,13 +263,24 @@ export default function Portfolio() {
                   Jeshcee Pay Web App
                   <ExternalLink size={20} className="text-cyan-400" />
                 </CardTitle>
-                <CardDescription className="text-slate-400">
-                  React | Node | Firebase
+                <CardDescription className="text-slate-400 flex gap-2 flex-wrap">
+                  <Badge variant="secondary"className="bg-cyan-500/10 text-cyan-400 border-cyan-500/30">
+                    React.js
+                  </Badge>
+                  <Badge variant="secondary"className="bg-blue-500/10 text-blue-400 border-blue-500/30">
+                    Node.js
+                  </Badge>
+                  <Badge variant="secondary"className="bg-green-500/10 text-green-400 border-green-500/30">
+                    NoSQL
+                  </Badge>
+                  <Badge variant="secondary"className="bg-gray-500/10 text-gray-400 border-gray-500/30">
+                    Firebase
+                  </Badge>
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-slate-300">
-                  Full-stack payment web application using React for the frontend, Node.js backend, and Firebase for real-time data management.
+                  A full-stack payment web application focused on learning NoSQL database integration and full-stack development, built with React for the frontend, Node.js for the backend, and Firebase for real-time data management.
                 </p>
               </CardContent>
             </Card>
@@ -316,24 +333,28 @@ export default function Portfolio() {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Certificates</h2>
           <p className="text-slate-400 mb-12">I've earned additional certifications online to enhance my skills.</p>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
             {[
               {
+                image: "UC-69cc95d7-5610-45eb-bd3c-818cbc95755b.pdf.png",
                 title: "The Complete 2024 Web Development Bootcamp",
                 description: "Master full-stack web development with the latest tools and technologies in this comprehensive bootcamp.",
                 issuer: "Udemy"
               },
               {
+                image: "CCNA-_Enterprise_Networking-_Security-_and_Automation_certificate_pbvilla-mcm-edu-ph_ab408d08-cae5-4bf5-878f-701bbef00c26.pdf.png",
                 title: "CCNA: Enterprise Networking, Security, and Automation",
                 description: "Master enterprise networking, security, and automation to build and manage modern IT infrastructures.",
                 issuer: "Cisco"
               },
               {
+                image: "GoogleCourseCertificate_Start the UX Design Process.pdf.png",
                 title: "Start the UX Design Process: Empathize, Define, and Ideate",
                 description: "Learn the essentials of UX design by exploring user needs, defining problems, and generating creative solutions.",
                 issuer: "Google"
               },
               {
+                image: "CertificateOfCompletion_Software Developement Processes and Methodologies.pdf.png",
                 title: "Software Development: Processes and Methodologies",
                 description: "Learn key software development processes and methodologies for efficient project execution.",
                 issuer: "University of Minnesota"
@@ -355,13 +376,23 @@ export default function Portfolio() {
               }
             ].map((cert, index) => (
               <Card key={index} className="bg-slate-800/50 border-slate-700 hover:border-cyan-500/50 transition-all hover:shadow-xl hover:shadow-cyan-500/10">
-                <CardHeader>
-                  <CardTitle className="text-white text-lg">{cert.title}</CardTitle>
-                  <CardDescription className="text-cyan-400">{cert.issuer}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-slate-300 text-sm">{cert.description}</p>
-                </CardContent>
+                <div className="flex items-start gap-4 mx-4">
+                  <div className="w-50 h-38 rounded-md overflow-hidden shrink-0 bg-slate-700/20">
+                    <Image
+                      src={cert.image ? `/images/${cert.image}` : '/images/cert-placeholder.png'}
+                      alt={cert.title || 'Certificate'}
+                      width={600}
+                      height={340}
+                      className="object-cover w-full h-full"
+                    />
+                  </div>
+
+                  <div className="flex flex-col space-y-2 w-auto h-auto">
+                    <CardTitle className="text-white text-lg">{cert.title}</CardTitle>
+                    <CardDescription className="text-cyan-400">{cert.issuer}</CardDescription>
+                    <CardContent className="text-slate-300 text-sm px-0">{cert.description}</CardContent>
+                  </div>
+                </div>
               </Card>
             ))}
           </div>
