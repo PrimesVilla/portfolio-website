@@ -214,24 +214,22 @@ export default function Portfolio() {
               <Github size={20} />
               github.com/PrimesVilla
             </a>
-          </div>
+            </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="bg-slate-800/50 border-slate-700 hover:border-cyan-500/50 transition-all hover:shadow-xl hover:shadow-cyan-500/10 group">
+            <div className="grid md:grid-cols-3 gap-8">
+            <a href="https://primesvilla.github.io/MasSafe-Website/" target="_blank" rel="noopener noreferrer">
+              <Card className="bg-slate-800/50 border-slate-700 hover:border-cyan-500/50 transition-all hover:shadow-xl hover:shadow-cyan-500/10 group cursor-pointer">
               <CardHeader>
                 <div className="aspect-video bg-linear-to-br from-blue-600/20 to-purple-600/20 rounded-lg mb-4 flex items-center justify-center">
-                  <Database size={64} className="text-cyan-400 opacity-50" />
+                <Image src={'/images/massafe-landing.png'} alt='massage-landing.png' width={1080} height={1080} className='object-cover rounded-lg w-full h-full'/>
                 </div>
                 <CardTitle className="text-white group-hover:text-cyan-400 transition-colors flex items-center justify-between">
-                  MasSafe Start Up Website
-                  <ExternalLink size={20} className="text-cyan-400" />
+                MasSafe Start Up Website
+                <ExternalLink size={20} className="text-cyan-400" />
                 </CardTitle>
                 <CardDescription className="text-slate-400 flex gap-2 flex-wrap">
                   <Badge variant="secondary"className="bg-cyan-500/10 text-cyan-400 border-cyan-500/30">
                     HTML
-                  </Badge>
-                  <Badge variant="secondary"className="bg-cyan-500/10 text-cyan-400 border-cyan-500/30">
-                    CSS
                   </Badge>
                   <Badge variant="secondary"className="bg-orange-500/10 text-orange-400 border-orange-500/30">
                     Git
@@ -253,6 +251,7 @@ export default function Portfolio() {
                 </p>
               </CardContent>
             </Card>
+            </a>
 
             <Card className="bg-slate-800/50 border-slate-700 hover:border-cyan-500/50 transition-all hover:shadow-xl hover:shadow-cyan-500/10 group">
               <CardHeader>
@@ -267,20 +266,17 @@ export default function Portfolio() {
                   <Badge variant="secondary"className="bg-cyan-500/10 text-cyan-400 border-cyan-500/30">
                     React.js
                   </Badge>
-                  <Badge variant="secondary"className="bg-blue-500/10 text-blue-400 border-blue-500/30">
-                    Node.js
+                  <Badge variant="secondary"className="bg-orange-500/10 text-orange-400 border-orange-500/30">
+                    Git
                   </Badge>
                   <Badge variant="secondary"className="bg-green-500/10 text-green-400 border-green-500/30">
-                    NoSQL
-                  </Badge>
-                  <Badge variant="secondary"className="bg-gray-500/10 text-gray-400 border-gray-500/30">
-                    Firebase
+                    Firebase Database
                   </Badge>
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-slate-300">
-                  A full-stack payment web application focused on learning NoSQL database integration and full-stack development, built with React for the frontend, Node.js for the backend, and Firebase for real-time data management.
+                  Jeshcee pay: a web application for Jeshcee Pharmacy focused on learning NoSQL database integration and full-stack development.
                 </p>
               </CardContent>
             </Card>
