@@ -69,7 +69,7 @@ export default function Portfolio() {
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
                 <a
-                  href="/docs/Villa_PrimesBryanBilal_CV.pdf"
+                  href="docs/Villa_PrimesBryanBilal_CV.pdf"
                   download="Villa_PrimesBryanBilal_CV.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -100,7 +100,7 @@ export default function Portfolio() {
                 <div className="w-90 h-90 rounded-full bg-slate-800 border-4 border-cyan-300/80 relative overflow-hidden">
                   <div className="absolute inset-0 p bg-linear-to-br from-cyan-500/10 to-transparent">
                     <Image
-                      src="/images/Villa_Profile.jpeg"
+                      src="images/Villa_Profile.jpeg"
                       alt="Villa Profile Picture"
                       width={400}
                       height={400}
@@ -235,7 +235,7 @@ export default function Portfolio() {
               <Card className="bg-slate-800/50 border-slate-700 hover:border-cyan-500/50 transition-all hover:shadow-xl hover:shadow-cyan-500/10 group cursor-pointer">
                 <CardHeader>
                   <div className="aspect-video bg-linear-to-br from-blue-600/20 to-purple-600/20 rounded-lg mb-4 flex items-center justify-center">
-                    <Image src={'/images/massafe-landing.png'} alt='MasSafe Startup Website Screenshot' width={1080} height={1080} className='object-cover rounded-lg w-full h-full'/>
+                    <Image src={'images/massafe-landing.png'} alt='MasSafe Startup Website Screenshot' width={1080} height={1080} className='object-cover rounded-lg w-full h-full'/>
                   </div>
                   <CardTitle className="text-white group-hover:text-cyan-400 transition-colors flex items-center justify-between">
                     MasSafe Start Up Website
@@ -277,7 +277,7 @@ export default function Portfolio() {
               <Card className="bg-slate-800/50 border-slate-700 hover:border-cyan-500/50 transition-all hover:shadow-xl hover:shadow-cyan-500/10 group cursor-pointer">
               <CardHeader>
                 <div className="aspect-video bg-linear-to-br from-green-600/20 to-emerald-600/20 rounded-lg mb-4 flex items-center justify-center">
-                  <Image src={'/images/jeshceepay.png'} alt='massage-landing.png' width={1080} height={1080} className='object-cover rounded-lg w-full h-full'/>
+                  <Image src={'images/jeshceepay.png'} alt='massage-landing.png' width={1080} height={1080} className='object-cover rounded-lg w-full h-full'/>
                 </div>
                 <CardTitle className="text-white group-hover:text-cyan-400 transition-colors flex items-center justify-between">
                   Jeshcee Pay Web App
@@ -313,7 +313,7 @@ export default function Portfolio() {
             <Card className="bg-slate-800/50 border-slate-700 hover:border-cyan-500/50 transition-all hover:shadow-xl hover:shadow-cyan-500/10 group">
               <CardHeader>
                 <div className="aspect-video bg-linear-to-br from-orange-600/20 to-red-600/20 rounded-lg mb-4 flex items-center justify-center">
-                  <Image src={'/images/jeep-connect.png'} alt='massage-landing.png' width={1080} height={1080} className='object-cover rounded-lg w-full h-full'/>
+                  <Image src={'images/jeep-connect.png'} alt='massage-landing.png' width={1080} height={1080} className='object-cover rounded-lg w-full h-full'/>
                 </div>
                 <CardTitle className="text-white group-hover:text-cyan-400 transition-colors flex items-center justify-between">
                   Jeep Connect
@@ -343,7 +343,7 @@ export default function Portfolio() {
           </a>
 
           <a
-              href="/docs/V2_CS-009_ThesisPaper_Revised_FromV2-3.pdf"
+              href="docs/V2_CS-009_ThesisPaper_Revised_FromV2-3.pdf"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Open Jeshcee Pay Web App"
@@ -438,7 +438,7 @@ export default function Portfolio() {
                 <CardContent className="flex items-start gap-4">
                   <div className="w-50 h-38 rounded-md overflow-hidden shrink-0 bg-slate-700/20">
                     <Image
-                      src={`/images/${cert.image}`}
+                      src={`images/${cert.image}`}
                       alt={cert.title || 'Certificate'}
                       width={400}
                       height={400}
