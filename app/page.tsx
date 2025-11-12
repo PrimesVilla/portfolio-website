@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import { Github, Linkedin, Mail, Phone, ExternalLink, Menu, X, Code2, Database, GitBranch, Wrench } from 'lucide-react';
+import { Mail, Phone, ExternalLink, Menu, X, Code2, Download, Github, Linkedin} from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -68,13 +68,21 @@ export default function Portfolio() {
                 BS Computer Science graduate at Mapúa Malayan Colleges Mindanao with a keen interest in <span className="text-cyan-400 font-medium">full-stack web development</span>. I'm willing to start immediately and eager to undergo training to gain more knowledge and experience in the field.
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
+                <a
+                  href="/docs/Villa_PrimesBryanBilal_CV.pdf"
+                  download="Villa_PrimesBryanBilal_CV.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                 <Button
                   size="lg"
                   className="bg-cyan-500   hover:bg-cyan-500/40 text-white"
-                  onClick={() => scrollToSection('contact')}
                 >
-                  Work with me today
+                  <Download size={18} />
+                  Download Resume
+                  
                 </Button>
+                </a>
                 <Button
                   size="lg"
                   variant="outline"

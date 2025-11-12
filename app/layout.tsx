@@ -19,8 +19,7 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: "/favicon.svg",
-  }
-  ,
+  },
   description:
     "Personal portfolio of Sharu — frontend developer specializing in React, Next.js and TypeScript.",
   keywords: [
