@@ -201,7 +201,7 @@ export default function Portfolio() {
         </div>
       </section>
 
-      <section id="projects" className="min-h-screen py-20">
+      <section id="projects" className="min-h-screen py-20 ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between justify-items-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-white">Projects</h2>
@@ -216,47 +216,60 @@ export default function Portfolio() {
             </a>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8">
-            <a href="https://primesvilla.github.io/MasSafe-Website/" target="_blank" rel="noopener noreferrer">
+            <div className="grid md:grid-cols-3 gap-6">
+            <a
+              href="https://primesvilla.github.io/MasSafe-Website/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open MasSafe landing page"
+              className=""
+            >
               <Card className="bg-slate-800/50 border-slate-700 hover:border-cyan-500/50 transition-all hover:shadow-xl hover:shadow-cyan-500/10 group cursor-pointer">
-              <CardHeader>
-                <div className="aspect-video bg-linear-to-br from-blue-600/20 to-purple-600/20 rounded-lg mb-4 flex items-center justify-center">
-                <Image src={'/images/massafe-landing.png'} alt='massage-landing.png' width={1080} height={1080} className='object-cover rounded-lg w-full h-full'/>
-                </div>
-                <CardTitle className="text-white group-hover:text-cyan-400 transition-colors flex items-center justify-between">
-                MasSafe Start Up Website
-                <ExternalLink size={20} className="text-cyan-400" />
-                </CardTitle>
-                <CardDescription className="text-slate-400 flex gap-2 flex-wrap">
-                  <Badge variant="secondary"className="bg-cyan-500/10 text-cyan-400 border-cyan-500/30">
-                    HTML
-                  </Badge>
-                  <Badge variant="secondary"className="bg-orange-500/10 text-orange-400 border-orange-500/30">
-                    Git
-                  </Badge>
-                  <Badge variant="secondary"className="bg-purple-500/10 text-purple-400 border-purple-500/30">
-                    Miro
-                  </Badge>
-                  <Badge variant="secondary"className="bg-purple-500/10 text-purple-400 border-purple-500/30">
-                    Figma
-                  </Badge>
-                  <Badge variant="secondary"className="bg-gray-500/10 text-gray-400 border-gray-500/30">
-                    Bootstrap
-                  </Badge>
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-slate-300">
-                  MasSafe: A modern startup website built to display a concept app designed for a Human-Computer Interaction (HCI) project, focusing on responsive design, user-friendly UI/UX, and team collaboration via Miro and Figma. 
-                </p>
-              </CardContent>
-            </Card>
+                <CardHeader>
+                  <div className="aspect-video bg-linear-to-br from-blue-600/20 to-purple-600/20 rounded-lg mb-4 flex items-center justify-center">
+                    <Image src={'/images/massafe-landing.png'} alt='MasSafe Startup Website Screenshot' width={1080} height={1080} className='object-cover rounded-lg w-full h-full'/>
+                  </div>
+                  <CardTitle className="text-white group-hover:text-cyan-400 transition-colors flex items-center justify-between">
+                    MasSafe Start Up Website
+                    <ExternalLink size={20} className="text-cyan-400" />
+                  </CardTitle>
+                  <CardDescription className="text-slate-400 flex gap-2 flex-wrap">
+                    <Badge variant="secondary"className="bg-cyan-500/10 text-cyan-400 border-cyan-500/30">
+                      HTML
+                    </Badge>
+                    <Badge variant="secondary"className="bg-orange-500/10 text-orange-400 border-orange-500/30">
+                      Git
+                    </Badge>
+                    <Badge variant="secondary"className="bg-purple-500/10 text-purple-400 border-purple-500/30">
+                      Miro
+                    </Badge>
+                    <Badge variant="secondary"className="bg-purple-500/10 text-purple-400 border-purple-500/30">
+                      Figma
+                    </Badge>
+                    <Badge variant="secondary"className="bg-gray-500/10 text-gray-400 border-gray-500/30">
+                      Bootstrap
+                    </Badge>
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-slate-300">
+                    MasSafe: A modern startup website built to display a concept app designed for a Human-Computer Interaction (HCI) project, focusing on responsive design, user-friendly UI/UX, and team collaboration via Miro and Figma. 
+                  </p>
+                </CardContent>
+              </Card>
             </a>
 
-            <Card className="bg-slate-800/50 border-slate-700 hover:border-cyan-500/50 transition-all hover:shadow-xl hover:shadow-cyan-500/10 group">
+            <a
+              href="https://jeshceepay.web.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open YOLOv8-DeepSORT Thesis Project PDF"
+              className="contents"
+            >
+              <Card className="bg-slate-800/50 border-slate-700 hover:border-cyan-500/50 transition-all hover:shadow-xl hover:shadow-cyan-500/10 group cursor-pointer">
               <CardHeader>
                 <div className="aspect-video bg-linear-to-br from-green-600/20 to-emerald-600/20 rounded-lg mb-4 flex items-center justify-center">
-                  <Wrench size={64} className="text-cyan-400 opacity-50" />
+                  <Image src={'/images/jeshceepay.png'} alt='massage-landing.png' width={1080} height={1080} className='object-cover rounded-lg w-full h-full'/>
                 </div>
                 <CardTitle className="text-white group-hover:text-cyan-400 transition-colors flex items-center justify-between">
                   Jeshcee Pay Web App
@@ -280,18 +293,37 @@ export default function Portfolio() {
                 </p>
               </CardContent>
             </Card>
+          </a>
 
+          <a
+              href="https://jeep-connect.onrender.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Jeshcee Pay Web App"
+              className="contents"
+          >
             <Card className="bg-slate-800/50 border-slate-700 hover:border-cyan-500/50 transition-all hover:shadow-xl hover:shadow-cyan-500/10 group">
               <CardHeader>
                 <div className="aspect-video bg-linear-to-br from-orange-600/20 to-red-600/20 rounded-lg mb-4 flex items-center justify-center">
-                  <GitBranch size={64} className="text-cyan-400 opacity-50" />
+                  <Image src={'/images/jeep-connect.png'} alt='massage-landing.png' width={1080} height={1080} className='object-cover rounded-lg w-full h-full'/>
                 </div>
                 <CardTitle className="text-white group-hover:text-cyan-400 transition-colors flex items-center justify-between">
                   Jeep Connect
                   <ExternalLink size={20} className="text-cyan-400" />
                 </CardTitle>
-                <CardDescription className="text-slate-400">
-                  Leaflet | LRM | Flask
+                <CardDescription className="text-slate-400 flex gap-2 flex-wrap">
+                  <Badge variant="secondary"className="bg-cyan-500/10 text-cyan-400 border-cyan-500/30">
+                    HTML
+                  </Badge>
+                  <Badge variant="secondary"className="bg-cyan-500/10 text-cyan-400 border-cyan-500/30">
+                    CSS
+                  </Badge>
+                  <Badge variant="secondary"className="bg-blue-500/10 text-blue-400 border-blue-500/30">
+                    Flask
+                  </Badge>
+                  <Badge variant="secondary"className="bg-gray-500/10 text-gray-400 border-gray-500/30">
+                    Leaflet Routing Machine
+                  </Badge>
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -300,26 +332,46 @@ export default function Portfolio() {
                 </p>
               </CardContent>
             </Card>
+          </a>
 
+          <a
+              href="/docs/V2_CS-009_ThesisPaper_Revised_FromV2-3.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Jeshcee Pay Web App"
+              className="contents"
+          >  
             <Card className="bg-slate-800/50 border-slate-700 hover:border-cyan-500/50 transition-all hover:shadow-xl hover:shadow-cyan-500/10 group">
               <CardHeader>
                 <div className="aspect-video bg-linear-to-br from-cyan-600/20 to-blue-600/20 rounded-lg mb-4 flex items-center justify-center">
                   <Code2 size={64} className="text-cyan-400 opacity-50" />
                 </div>
                 <CardTitle className="text-white group-hover:text-cyan-400 transition-colors flex items-center justify-between">
-                  IS181 Final Project
+                  YOLOv8-DeepSORT Thesis Project
                   <ExternalLink size={20} className="text-cyan-400" />
                 </CardTitle>
-                <CardDescription className="text-slate-400">
-                  Focus Group Web Page
+                <CardDescription className="text-slate-400 flex gap-2 flex-wrap">
+                  <Badge variant="secondary"className="bg-blue-500/10 text-blue-400 border-blue-500/30">
+                    Python
+                  </Badge>
+                  <Badge variant="secondary"className="bg-gray-500/10 text-gray-400 border-gray-500/30">
+                    Deep Learning
+                  </Badge>
+                  <Badge variant="secondary"className="bg-gray-500/10 text-gray-400 border-gray-500/30">
+                    Object Detection
+                  </Badge>
+                  <Badge variant="secondary"className="bg-gray-500/10 text-gray-400 border-gray-500/30">
+                    IoT
+                  </Badge>
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-slate-300">
-                  Academic project focusing on AI-generated content in educational settings, exploring the ethical implications and challenges.
+                  Improving Real-Time IoT-Based Waste Segregation leveraging YOLOv8 and DeepSORT for Davao Material Recovery Facilities.
                 </p>
               </CardContent>
             </Card>
+          </a>
           </div>
         </div>
       </section>
@@ -338,47 +390,50 @@ export default function Portfolio() {
                 issuer: "Udemy"
               },
               {
-                image: "CCNA-_Enterprise_Networking-_Security-_and_Automation_certificate_pbvilla-mcm-edu-ph_ab408d08-cae5-4bf5-878f-701bbef00c26.pdf.png",
-                title: "CCNA: Enterprise Networking, Security, and Automation",
-                description: "Master enterprise networking, security, and automation to build and manage modern IT infrastructures.",
-                issuer: "Cisco"
-              },
-              {
-                image: "GoogleCourseCertificate_Start the UX Design Process.pdf.png",
-                title: "Start the UX Design Process: Empathize, Define, and Ideate",
-                description: "Learn the essentials of UX design by exploring user needs, defining problems, and generating creative solutions.",
-                issuer: "Google"
-              },
-              {
                 image: "CertificateOfCompletion_Software Developement Processes and Methodologies.pdf.png",
                 title: "Software Development: Processes and Methodologies",
                 description: "Learn key software development processes and methodologies for efficient project execution.",
                 issuer: "University of Minnesota"
               },
               {
+                image: "CCNA-_Enterprise_Networking-_Security-_and_Automation_certificate_pbvilla-mcm-edu-ph_ab408d08-cae5-4bf5-878f-701bbef00c26.pdf.png",
+                title: "CCNA: Enterprise Networking, Security, and Automation",
+                description: "Master enterprise networking, security, and automation to build and manage modern IT infrastructures.",
+                issuer: "Cisco"
+              },
+              {
+                image: "CCNA-_Switching_Routing_and_Wireless_Essentials_certificate_pbvilla-mcm-edu-ph_e2b824e4-02dc-4e83-92e4-b81d4bf75d20.pdf.png",
+                title: "CCNA: Switching, Routing, and Wireless Essentials",
+                description: "Built a strong foundation by learning how to configure, manage, and troubleshoot switches, routers, and wireless networks",
+                issuer: "Cisco"
+              },
+              {
+                image: "CertificateOfCompletion_Agile Software Development Clean Coding Practices.pdf.png",
                 title: "Agile Software Development: Clean Coding Practices",
                 description: "Learn how to write clean, readable code that's easy for both computers and humans to understand.",
                 issuer: "LinkedIn Learning"
               },
               {
+                image: "CertificateOfCompletion_Agile Software Development Refactoring.pdf.png",
                 title: "Agile Software Development: Refactoring",
                 description: "Learn the fundamentals of refactoring to a more maintainable code, and seamlessly integrate new features.",
                 issuer: "LinkedIn Learning"
               },
               {
+                image: "CertificateOfCompletion_Understanding the Impact of a Merger for IT Teams.pdf.png",
                 title: "Understanding the Impact of Merger for IT Teams",
                 description: "Learn how IT teams can navigate the challenges of a post-acquisition merger.",
                 issuer: "LinkedIn Learning"
               }
             ].map((cert, index) => (
               <Card key={index} className="bg-slate-800/50 border-slate-700 hover:border-cyan-500/50 transition-all hover:shadow-xl hover:shadow-cyan-500/10">
-                <div className="flex items-start gap-4 mx-4">
+                <CardContent className="flex items-start gap-4">
                   <div className="w-50 h-38 rounded-md overflow-hidden shrink-0 bg-slate-700/20">
                     <Image
-                      src={cert.image ? `/images/${cert.image}` : '/images/cert-placeholder.png'}
+                      src={`/images/${cert.image}`}
                       alt={cert.title || 'Certificate'}
-                      width={600}
-                      height={340}
+                      width={400}
+                      height={400}
                       className="object-cover w-full h-full"
                     />
                   </div>
@@ -386,9 +441,9 @@ export default function Portfolio() {
                   <div className="flex flex-col space-y-2 w-auto h-auto">
                     <CardTitle className="text-white text-lg">{cert.title}</CardTitle>
                     <CardDescription className="text-cyan-400">{cert.issuer}</CardDescription>
-                    <CardContent className="text-slate-300 text-sm px-0">{cert.description}</CardContent>
+                    <span className="text-slate-300 text-sm px-0">{cert.description}</span>
                   </div>
-                </div>
+                </CardContent>
               </Card>
             ))}
           </div>
