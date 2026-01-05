@@ -17,9 +17,6 @@ export const metadata: Metadata = {
     default: "Primes Villa — Frontend Developer",
     template: "%s | Primes Portfolio",
   },
-  icons: {
-    icon: "./favicon.svg",
-  },
   description:
     "Personal portfolio of Sharu — frontend developer specializing in React, Next.js and TypeScript.",
   keywords: [
