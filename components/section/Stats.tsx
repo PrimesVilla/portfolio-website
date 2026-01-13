@@ -61,7 +61,7 @@ function AnimatedCounter({ target, suffix }: { target: number; suffix: string })
   );
 }
 
-export function ModernStats({ stats }: StatsProps) {
+export function Stats({ stats }: StatsProps) {
   const defaultStats: StatItem[] = [
     { label: 'Projects Completed', value: 15, suffix: '+' },
     { label: 'Happy Clients', value: 8, suffix: '+' },

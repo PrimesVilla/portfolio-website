@@ -1,6 +1,11 @@
 'use client';
 
+import { useEffect, useRef } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Award, BookOpen, Code, Zap } from 'lucide-react';
+
+gsap.registerPlugin(ScrollTrigger);
 
 interface TimelineItem {
   year: string;
@@ -9,7 +14,51 @@ interface TimelineItem {
   icon: React.ReactNode;
 }
 
-export function ModernTimeline() {
+export function Timeline() {
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const titleRef = useRef<HTMLDivElement>(null);
+  const timelineRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!titleRef.current || !timelineRef.current) return;
+
+    // Title animation
+    gsap.fromTo(
+      titleRef.current,
+      { opacity: 0, y: 30 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: 'top 70%',
+        },
+      }
+    );
+
+    // Timeline items animation
+    const items = timelineRef.current.querySelectorAll('[data-timeline-item]');
+    items.forEach((item, idx) => {
+      gsap.fromTo(
+        item,
+        { opacity: 0, y: 50, scale: 0.95 },
+        {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          duration: 0.8,
+          delay: idx * 0.15,
+          ease: 'power2.out',
+          scrollTrigger: {
+            trigger: item,
+            start: 'top 80%',
+          },
+        }
+      );
+    });
+  }, []);
   const timeline: TimelineItem[] = [
     {
       year: '2023',
@@ -38,9 +87,9 @@ export function ModernTimeline() {
   ];
 
   return (
-    <section id="timeline" className="py-32 px-4 bg-gradient-to-b from-blue-950/20 to-black">
+    <section ref={sectionRef} id="timeline" className="py-32 px-4 bg-gradient-to-b from-blue-950/20 to-black">
       <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-20">
+        <div ref={titleRef} className="text-center mb-20">
           <h2 className="text-5xl md:text-6xl font-bold text-white mb-4">
             My <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Journey</span>
           </h2>
@@ -49,14 +98,14 @@ export function ModernTimeline() {
           </p>
         </div>
 
-        <div className="relative">
+        <div ref={timelineRef} className="relative">
           {/* Timeline line */}
           <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-blue-500 to-cyan-400 hidden md:block"></div>
 
           {/* Timeline items */}
           <div className="space-y-12">
             {timeline.map((item, idx) => (
-              <div key={idx} className="relative">
+              <div key={idx} data-timeline-item className="relative">
                 {/* Timeline dot */}
                 <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-8 md:top-4">
                   <div className="w-4 h-4 bg-blue-500 rounded-full border-4 border-black"></div>

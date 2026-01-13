@@ -1,6 +1,6 @@
 'use client';
 
-export function ModernFooter() {
+export function Footer() {
   return (
     <footer className="bg-black border-t border-blue-500/20 py-12 px-4">
       <div className="max-w-6xl mx-auto text-center">
